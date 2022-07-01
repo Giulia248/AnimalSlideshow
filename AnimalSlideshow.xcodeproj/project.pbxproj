@@ -11,6 +11,7 @@
 		CEC88082286EE479007E8000 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC88081286EE479007E8000 /* ContentView.swift */; };
 		CEC88084286EE47D007E8000 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC88083286EE47D007E8000 /* Assets.xcassets */; };
 		CEC88087286EE47D007E8000 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC88086286EE47D007E8000 /* Preview Assets.xcassets */; };
+		CEC88092286EEFB7007E8000 /* ImageSliderSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = CEC88091286EEFB7007E8000 /* ImageSliderSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC88092286EEFB7007E8000 /* ImageSliderSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = AnimalSlideshow;
+			packageProductDependencies = (
+				CEC88091286EEFB7007E8000 /* ImageSliderSwiftUI */,
+			);
 			productName = AnimalSlideshow;
 			productReference = CEC8807C286EE479007E8000 /* AnimalSlideshow.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,10 @@
 				Base,
 			);
 			mainGroup = CEC88073286EE479007E8000;
+			packageReferences = (
+				CEC8808D286EE4AB007E8000 /* XCRemoteSwiftPackageReference "ImageSlideshow" */,
+				CEC88090286EEFB7007E8000 /* XCRemoteSwiftPackageReference "ImageSliderSwiftUI" */,
+			);
 			productRefGroup = CEC8807D286EE479007E8000 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -337,6 +346,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEC8808D286EE4AB007E8000 /* XCRemoteSwiftPackageReference "ImageSlideshow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zvonicek/ImageSlideshow.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		CEC88090286EEFB7007E8000 /* XCRemoteSwiftPackageReference "ImageSliderSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alibabarhassan/ImageSliderSwiftUI.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEC88091286EEFB7007E8000 /* ImageSliderSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEC88090286EEFB7007E8000 /* XCRemoteSwiftPackageReference "ImageSliderSwiftUI" */;
+			productName = ImageSliderSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEC88074286EE479007E8000 /* Project object */;
 }
