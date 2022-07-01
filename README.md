@@ -16,7 +16,7 @@ https://user-images.githubusercontent.com/106954791/176874520-68b8815e-428b-457a
 
 ## Code used For Slideshow
 
-'''
+```
 
                import ImageSliderSwiftUI
                ImageSlider(
@@ -28,7 +28,7 @@ https://user-images.githubusercontent.com/106954791/176874520-68b8815e-428b-457a
                 ])
                              
                                                       
-'''
+```
 
 
 ## Git Repository
